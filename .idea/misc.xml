@@ -5,6 +5,10 @@
       <map>
         <entry key="..\:/KPI/TechDemo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.233" />
         <entry key="..\:/KPI/TechDemo/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/KPI/TechDemo/app/src/main/res/layout/add_activity.xml" value="0.24818840579710144" />
+        <entry key="..\:/KPI/TechDemo/app/src/main/res/layout/div_activity.xml" value="0.24818840579710144" />
+        <entry key="..\:/KPI/TechDemo/app/src/main/res/layout/mul_activity.xml" value="0.24818840579710144" />
+        <entry key="..\:/KPI/TechDemo/app/src/main/res/layout/sub_activity.xml" value="0.24818840579710144" />
       </map>
     </option>
   </component>

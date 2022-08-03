@@ -1,6 +1,8 @@
 package com.example.techdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.HapticFeedbackConstants;
@@ -41,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Clicked " + name, Toast.LENGTH_SHORT).show();
                 textView.setText("Last clicked button: " + name);
                 btnAdd.performHapticFeedback(HapticFeedbackConstants.KEYBOARD_TAP);
+
+                Intent intent = new Intent(MainActivity.this, AddActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -50,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
                 String name = btnSub.getText().toString();
                 Toast.makeText(MainActivity.this, "Clicked " + name, Toast.LENGTH_SHORT).show();
                 textView.setText("Last clicked button: " + name);
+
+                Intent intent = new Intent(MainActivity.this, SubActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -59,6 +67,9 @@ public class MainActivity extends AppCompatActivity {
                 String name = btnMul.getText().toString();
                 Toast.makeText(MainActivity.this, "Clicked " + name, Toast.LENGTH_SHORT).show();
                 textView.setText("Last clicked button: " + name);
+
+                Intent intent = new Intent(MainActivity.this, MulActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -68,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
                 String name = btnDiv.getText().toString();
                 Toast.makeText(MainActivity.this, "Clicked " + name, Toast.LENGTH_SHORT).show();
                 textView.setText("Last clicked button: " + name);
+
+                Intent intent = new Intent(MainActivity.this, DivActivity.class);
+                startActivity(intent);
             }
         });
 
