@@ -15,6 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+//import com.example.techdemo.NativeLibrary;
+
 public class AddActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +47,8 @@ public class AddActivity extends AppCompatActivity {
                 {
                     int valA = Integer.valueOf(strA);
                     int valB = Integer.valueOf(strB);
-                    result = String.valueOf(valB + valA);
+
+                    result = String.valueOf(NativeLibrary.Add(valA, valB));
                 }
                 btnRes.setText(result);
             }

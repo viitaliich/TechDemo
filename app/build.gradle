@@ -25,6 +25,19 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    sourceSets {
+        //noinspection GroovyAssignabilityCheck
+        main {
+            jni {
+                srcDirs = []
+            }
+
+            jniLibs {
+                srcDir 'D:\\KPI\\TechDemo\\SDK\\libs\\arm64-v8a'
+            }
+        }
+    }
 }
 
 dependencies {

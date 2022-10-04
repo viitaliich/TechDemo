@@ -39,7 +39,8 @@ public class MulActivity extends AppCompatActivity {
                 {
                     int valA = Integer.valueOf(strA);
                     int valB = Integer.valueOf(strB);
-                    result = String.valueOf(valA * valB);
+                    result = String.valueOf(NativeLibrary.Mul(valA, valB));
+
                 }
                 btnRes.setText(result);
             }

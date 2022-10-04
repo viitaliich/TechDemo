@@ -39,7 +39,8 @@ public class DivActivity extends AppCompatActivity {
                 {
                     int valA = Integer.valueOf(strA);
                     int valB = Integer.valueOf(strB);
-                    result = String.valueOf(valA / valB);
+                    result = String.valueOf(NativeLibrary.Div(valA, valB));
+
                 }
                 btnRes.setText(result);
             }
@@ -52,7 +53,5 @@ public class DivActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 }

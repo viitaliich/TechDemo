@@ -42,7 +42,8 @@ public class SubActivity extends AppCompatActivity {
                 {
                     int valA = Integer.valueOf(strA);
                     int valB = Integer.valueOf(strB);
-                    result = String.valueOf(valA - valB);
+                    result = String.valueOf(NativeLibrary.Sub(valA, valB));
+
                 }
                 btnRes.setText(result);
             }
